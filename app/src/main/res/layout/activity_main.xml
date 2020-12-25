@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#626767"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/gesture123"
+        android:layout_width="136dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/purple_500"
+        android:onClick="gesture"
+        android:text="Gesture"
+        app:layout_constraintBottom_toTopOf="@+id/manual123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/manual123"
+        android:layout_width="136dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="manual"
+        android:text="Manual"
+        app:layout_constraintBottom_toTopOf="@+id/textView123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gesture123" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="336dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="120dp"
+        android:background="#373938"
+        android:text="Wellcome..!"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual123" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
